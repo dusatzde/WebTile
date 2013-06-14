@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Web Live Tile</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/general.css">
     </head>
     <body>
-        <a href="tiles/fa.html">CLICK</a>
+        <div id="fb-root"></div>
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/cs_CZ/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <div id="header">
+            <div id="logo"></div>
+            <a href="http://www.hawks.mysteria.cz" id="web-link">www.webtile.org</a>
+        </div>
+        <div id="body">
+
+            <div id="header-wrapper">
+                <div id="qr-code"></div>
+                <div id="description">description</div>
+            </div>   
+            <div id="content-wrapper">
+                <div id="left-content">
+                    <span>Windows Phone 8</span>
+                    <br />
+                    <span>Windows Phone 7.8</span>
+                    <br />
+                    <span>Windows Phone 7.5</span>
+                    <br />
+                    <br />
+                    <p>
+                        Send feedback and tips for new web sites in top section.
+                    </p>
+                    <span class="caption">Conntact</span><br />
+                    <span>webtile[at]gmail.com</span>
+                    <br />
+                    <br />
+                    <div class="g-plusone"></div>
+                    <script type="text/javascript">
+                        (function() {
+                            var po = document.createElement('script');
+                            po.type = 'text/javascript';
+                            po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(po, s);
+                        })();
+                    </script>
+                    <div class="fb-like" data-href="http://www.hawks.mysteria.cz" data-send="true" data-layout="button_count" data-width="201" data-show-faces="true"></div>   </div>
+
+                <div id="right-content">description</div>
+            </div>  
+        </div>
+        <div id="bottom">
+            bottom
+        </div>
     </body>
 </html>

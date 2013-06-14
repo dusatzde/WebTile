@@ -1,13 +1,80 @@
-/* 
-    Document   : index
-    Created on : 13.6.2013, 11:16:48
-    Author     : Zdeněk
-    Description:
-        Purpose of the stylesheet follows.
-*/
-
 body{
-    /*background-color: black;*/
-    
+    background-color: white;
+    width: 800px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10pt;
+}
+#logo{
+    width: 410px;
+    height: 75px;
+    float: left;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
 }
 
+#web-link{
+    display: block;
+    margin-left: 696px;
+}
+
+#header{
+    margin-top: 10px;
+    height: 80px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#body{
+/*    border: 1px solid black; */
+    height: 500px;
+}
+
+#bottom{
+    background-color: black;
+    height: 3em;
+}
+
+#qr-code{
+    width: 201px;
+    height: 201px;
+    background-image: url('../img/qr_hawks.png');
+    float: left;
+}
+
+#description{
+    width: 540px;
+    height: 201px;
+    background-color: #f3f3f3;
+    margin-left: 260px;
+}
+
+#header-wrapper{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#left-content{
+    width: 201px;
+    height: 100%;
+    float: left;
+    color: #8e9796;
+}
+
+#right-content{
+    width: 540px;
+    height: 100%;
+    margin-left: 260px;
+    border: 1px solid black;
+}
+
+.fb-like{
+    margin-top: 5px;
+}
+
+.g-plusone{
+    float: left;
+}
+
+.caption{
+    font-weight: bold;
+}
