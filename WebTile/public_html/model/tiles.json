@@ -1,0 +1,28 @@
+{
+    "tiles" : [
+        {
+            "caption": "Google.com",
+            "url": "https://www.google.com",
+            "ico": "gsearch",
+            "theme": "#0058C6"
+        },
+        {
+            "caption": "Facebook.com",
+            "url": "https://m.facebook.com",
+            "ico": "fa",
+            "theme": "#3B5998"
+        },
+        {
+            "caption": "MobilMania.cz",
+            "url": "http://m.mobilmania.cz",
+            "ico": "mm",
+            "theme": "white"
+        },
+        {
+            "caption": "YouTube.com",
+            "url": "http://m.youtube.com",
+            "ico": "youtube",
+            "theme": "white"
+        }
+    ]
+}
