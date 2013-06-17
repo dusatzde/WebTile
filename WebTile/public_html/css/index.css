@@ -95,7 +95,6 @@ body{
     font-weight: bold;
 }
 
-.fb-comments{
-    margin-top: 70px;
-    clear: both;
+.fb-comments-wrapper{
+    margin-top: 20px;
 }

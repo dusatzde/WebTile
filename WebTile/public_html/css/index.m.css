@@ -1,0 +1,100 @@
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10pt;
+}
+
+label, p{
+    font-weight: bold;
+}
+
+#app-title{
+    font-weight: normal;
+    font-family: initial;
+}
+
+.fb-like{
+    margin-top: 5px;
+}
+
+.g-plusone{
+    float: left;
+}
+
+.twitter-share-button{
+    display: block;
+    margin-top: 5px;
+}
+
+a.menu{
+    font-family: MS Sans Serif, Geneva, sans-serif;
+    font-size: 28pt;
+    color: #999999;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.item{
+    height: 34px;
+    margin-top: 7px;
+    display: block;
+    
+}
+
+.active{
+     color: #0099ff !important;
+}
+
+.selected{
+    background-color: #7dd0fa;
+}
+
+.ico{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #f4f4f4;
+    float: left;
+    background-color: Highlight;
+   
+}
+
+#example-url{
+    font-size: 8pt;
+    color: #cccccc;
+}
+
+#submit-btn{
+    width: 100%; 
+    height: 28px; 
+    margin-top: 20px; 
+    margin-bottom: 50px;
+}
+
+.item .caption{
+    width: 214px;
+    height: 32px;
+    margin-left: 50px;
+    line-height: 32px;
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+#items{
+    margin-top: 30px;
+}
+
+a.item{
+    color: black;
+    text-decoration: none;
+}
+
+a.item:hover{
+    text-decoration: none;
+    color: black;
+    background-color: #7dd0fa;
+}
+
+.fb-comments, .fb-comments-wrapper{
+    width: 100%;
+}
+
+

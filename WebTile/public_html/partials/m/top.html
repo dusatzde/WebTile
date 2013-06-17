@@ -1,0 +1,28 @@
+<div id="items">
+    <script>
+        var json = (function() {
+            var json = null;
+            $.ajax({
+                'async': false,
+                'global': false,
+                'url': '../model/tiles.json',
+                'dataType': "json",
+                'success': function(data) {
+                    json = data;
+                }
+            });
+            return json;
+        })();
+        var output = "";
+        for (var i in json.tiles) {
+            i = json.tiles[i];
+            output += '<a href="./../tile.html?theme=' + i.theme + '&ico=' + i.ico + '&url=' + i.url + '" class="item">' +
+                    '<div class="ico" style=" background-image: url(\'../img/icon/' + i.ico + '.png \')"></div>' +
+                    '<div class="caption">' + i.caption + '</div> </a>';
+        }
+        document.getElementById("items").innerHTML += output;
+    </script>
+</div>
+
+
+

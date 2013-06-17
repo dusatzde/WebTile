@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Web Live Tile</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Web Live Tile</title>
+        <link rel="stylesheet" type="text/css" href="../css/index.m.css">
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/flick/jquery-ui.min.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/util.m.js" ></script>
     </head>
-    <body>
-        <h1>Mobile version</h1>
-    </body>
+    <body >
+        <div id="fb-root"></div>
+        <p id="app-title">WEB LIVE TILE </p>
+        <div id="menu-wrapper">
+            <a href="javascript:void(0)" id="top" class="menu" >Top</a>
+            <a href="javascript:void(0)" id="custom" class="menu" >Custom</a>  
+        </div>
+        <div id="partial-view"></div>
+        <script>loadTop();</script>
+        <br />
+        <div class="g-plusone"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
+        <div class="fb-like" data-href="http://www.hawks.mysteria.cz" data-send="true" data-layout="button_count" data-width="201" data-show-faces="true"></div>
+    <br />
+    <br />
+    <br />
+    <div class="fb-comments-wrapper">
+        <span>Feel free to send comments.</span>
+        <div class="fb-comments" data-href="http://hawks.mysteria.cz"   data-num-posts="10"></div>
+    </div>
+</body>
 </html>
