@@ -26,7 +26,9 @@ $(document).ready(function() {
     });
 
     $('#custom').click(function() {
-        $('#partial-view').load('partials/custom.html');
+        $('#partial-view').load('partials/custom.html', function() {
+            registerCustomHandlers();
+        });
         $('#custom').addClass('active');
         $('#top').removeClass('active');
     });
@@ -36,7 +38,7 @@ $(document).ready(function() {
         if (!d.getElementById(id)) {
             js = d.createElement(s);
             js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
+            js.src = "http://platform.twitter.com/widgets.js";
             fjs.parentNode.insertBefore(js, fjs);
         }
     }(document, "script", "twitter-wjs");
@@ -63,9 +65,46 @@ $(document).ready(function() {
 
 });
 
+function registerCustomHandlers() {
+
+    $("a.item").click(function() {
+        $(this).addClass("selected").siblings().removeClass("selected");
+    });
+
+    $('#submit-btn').button();
+    $('#submit-btn').click(function() {
+        var path = createPath();
+        window.location.replace(path);
+        return false;
+    });
+}
+
 function loadTop() {
     $('#partial-view').load('partials/top.html');
     $('#top').addClass('active');
+}
+;
+
+function createPath() {
+    var userUrl = $('#user-url').val();
+    userUrl = checkUrl(userUrl);
+    var ico = 'web';
+    if($('.selected').length > 0){
+         ico = $('.selected')[0].getAttribute("id");
+    }
+    var path = "/tile.html?theme=Highlight&ico=" + ico + "&url=" + userUrl;
+    return path;
+};
+
+function checkUrl(userUrl){
+    if(userUrl.length === 0){
+        return "http://www.hawks.mysteria.cz";
+    }
+    var index = userUrl.indexOf("http");
+    if(index !== 0){
+         userUrl = "http://" + userUrl;
+    }
+    return userUrl;
 }
 
 
