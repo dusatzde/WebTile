@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Live Tile</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/general.css">
+        <link rel="stylesheet" type="text/css" href="css/content.css">
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/flick/jquery-ui.min.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/util.js" ></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script></script> 
+        <div id="header">
+            <div id="logo"></div>
+            <a href="http://www.hawks.mysteria.cz" id="web-link">www.webtile.org</a>
+        </div>
+        <div id="body">
+
+            <div id="header-wrapper">
+                <div id="qr-code"></div>
+                <div id="description">description</div>
+            </div>   
+            <div id="content-wrapper">
+                <div id="left-content">
+                    <span>Windows Phone 8</span><br />
+                    <span>Windows Phone 7.8</span><br />
+                    <span>Windows Phone 7.5</span><br /><br />
+                    <img src="img/925.png" /><br />
+                    <p>Send feedback and tips for new web sites in top section.</p>
+                    <span class="caption">Conntact</span><br />
+                    <span>info.webtile[at]gmail.com</span><br /><br />
+                    <div class="g-plusone"></div>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
+                    <div class="fb-like" data-href="http://www.hawks.mysteria.cz" data-send="true" data-layout="button_count" data-width="201" data-show-faces="true"></div></div>
+                <br /><br />
+                <div id="right-content">
+                    <div id="menu-wrapper">
+                        <a href="index.html" id="top" class="menu">Top</a>
+                        <a href="custom.html" id="custom" class="menu active">Custom</a>  
+                    </div>
+                    <div id="partial-view">
+                        <div id="items">
+                            <p class="caption">Pin link to start ...</p>
+                            <div id="sugg">
+                                <div id="qr-code-min"></div>
+                                <div id="msg">Open in Internet Explorer on your Windows Phone device. <span id="link">www.webtile.org</span></div>
+                            </div>
+                            <label for="user-url">Paste your URL:</label><br />
+                            <span id="example-url">(e.g. http://www.webtile.org)</span>
+                            <input type="url" id="user-url" style="width: 100%; height: 28px;"/>
+                            <br />
+                            <br />
+                            <p class="caption">Select category:</p>
+                            <a href="#" id="search" class="item">
+                                <div class="ico" style="background-image: url('img/icon/search.png');" ></div>
+                                <div class="caption">Search</div>
+                            </a>
+                            <a href="#" id="blog" class="item">
+                                <div class="ico" style="background-image: url('img/icon/blog.png');" ></div>
+                                <div class="caption">Blog</div>
+                            </a>
+                            <a href="#" id="cart"  class="item">
+                                <div class="ico" style="background-image: url('img/icon/cart.png');" ></div>
+                                <div class="caption">eShop</div>
+                            </a>
+                            <a href="#" id="img" class="item">
+                                <div class="ico" style="background-image: url('img/icon/img.png');" ></div>
+                                <div class="caption">Picture</div>
+                            </a>
+                            <a href="#" id="info" class="item">
+                                <div class="ico" style="background-image: url('img/icon/info.png');" ></div>
+                                <div class="caption">Info</div>
+                            </a>
+                            <a href="#" id="web" class="item">
+                                <div class="ico" style="background-image: url('img/icon/web.png');" ></div>
+                                <div class="caption">Web</div>
+                            </a>
+                            <a href="#" id="music" class="item">
+                                <div class="ico" style="background-image: url('img/icon/music.png');"></div>
+                                <div class="caption">Music</div>
+                            </a>
+                            <a href="#" id="rss" class="item">
+                                <div class="ico" style="background-image: url('img/icon/rss.png');"></div>
+                                <div class="caption">News</div>
+                            </a>
+                            <a href="#" id="sport" class="item">
+                                <div class="ico" style="background-image: url('img/icon/sport.png');"></div>
+                                <div class="caption">Sport</div>
+                            </a>
+                            <a href="#" id="play" class="item">
+                                <div class="ico" style="background-image: url('img/icon/play.png');"></div>
+                                <div class="caption">Multimedia</div>
+                            </a>
+                            <input id="submit-btn" type="button" value="- OK -" />
+                            <script>registerCustomHandlers();</script>
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="fb-comments-wrapper">
+                        <span>Feel free to send comments.</span>
+                        <div class="fb-comments" data-href="http://hawks.mysteria.cz" data-mobile="false" data-width="538" data-num-posts="15"></div>
+                    </div>
+                </div>
+            </div>  
+            <div id="bottom">
+                <div id="footer">
+                    <p>WEB LIVE TILE</p>
+                    <span>webtile[at]gmail.com</span>
+                    <span>©2013 DUSATKO Z</span>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+

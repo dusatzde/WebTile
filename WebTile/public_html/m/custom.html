@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Web Live Tile</title>
+        <link rel="stylesheet" type="text/css" href="../css/index.m.css">
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/flick/jquery-ui.min.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/util.m.js" ></script>
+    </head>
+    <body >
+        <div id="fb-root"></div>
+        <p id="app-title">WEB LIVE TILE</p>
+        <div id="menu-wrapper">
+            <a href="/m/index.html" id="top" class="menu" >Top</a>
+            <a href="/m/custom.html" id="custom" class="menu active" >Custom</a>
+        </div>
+        <div id="partial-view">
+            <div id="items">
+                <p class="caption">Pin link to start ...</p>
+                <label for="user-url">Paste your URL:</label><br />
+                <span id="example-url">(e.g. http://www.webtile.org)</span>
+                <input type="url" id="user-url" style="width: 100%; height: 28px;"/>
+                <br />
+                <br />
+                <p>Select category:</p>
+                <a id="search" href="#" class="item">
+                    <div class="ico" style="background-image: url('/img/icon/search.png');" ></div>
+                    <div class="caption">Search</div>
+                </a>
+                <a id="blog" href="#" class="item">
+                    <div class="ico" style="background-image: url('/img/icon/blog.png');" ></div>
+                    <div class="caption">Blog</div>
+                </a>
+                <a id="cart" href="#" class="item">
+                    <div class="ico" style="background-image: url('/img/icon/cart.png');" ></div>
+                    <div class="caption">eShop</div>
+                </a>
+                <a id="img" href="#" class="item">
+                    <div class="ico" style="background-image: url('/img/icon/img.png');" ></div>
+                    <div class="caption">Picture</div>
+                </a>
+                <a id="info" href="#" class="item">
+                    <div class="ico" style="background-image: url('/img/icon/info.png');" ></div>
+                    <div class="caption">Info</div>
+                </a>
+                <a id="web" href="#" class="item">
+                    <div class="ico" style="background-image: url('/img/icon/web.png');" ></div>
+                    <div class="caption">Web</div>
+                </a>
+                <a id="music" href="#" class="item">
+                    <div class="ico" style="background-image: url('/img/icon/music.png');"></div>
+                    <div class="caption">Music</div>
+                </a>
+                <a id="rss" href="#" class="item">
+                    <div class="ico" style="background-image: url('/img/icon/rss.png');"></div>
+                    <div class="caption">News</div>
+                </a>
+                <a id="sport" href="#" class="item">
+                    <div class="ico" style="background-image: url('/img/icon/sport.png');"></div>
+                    <div class="caption">Sport</div>
+                </a>
+                <a id="play" href="#" class="item">
+                    <div class="ico" style="background-image: url('/img/icon/play.png');"></div>
+                    <div class="caption">Multimedia</div>
+                </a>
+                <input id="submit-btn" type="button" value="Ok" />
+                <script>registerCustomHandlers();</script>
+            </div>
+        </div>
+
+        <br />
+        <div class="g-plusone"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
+        <div class="fb-like" data-href="http://www.hawks.mysteria.cz" data-send="true" data-layout="button_count" data-width="201" data-show-faces="true"></div>
+        <br />
+        <br />
+        <br />
+        <div class="fb-comments-wrapper">
+            <span>Feel free to send comments.</span>
+            <div class="fb-comments" data-href="http://hawks.mysteria.cz"   data-num-posts="10"></div>
+        </div>
+    </body>
+</html>

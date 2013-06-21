@@ -1,19 +1,4 @@
 $(document).ready(function() {
-    $('#top').click(function() {
-        $('#partial-view').load('../partials/m/top.html');
-        $('#top').addClass('active');
-        $('#custom').removeClass('active');
-    });
-
-    $('#custom').click(function() {
-        $('#partial-view').load('../partials/m/custom.html', function() {
-            registerCustomHandlers();
-        });
-
-        $('#custom').addClass('active');
-        $('#top').removeClass('active');
-    });
-
     !function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (!d.getElementById(id)) {
@@ -42,14 +27,13 @@ $(document).ready(function() {
         js.src = "//connect.facebook.net/us_EN/all.js#xfbml=1";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-
-
 });
 
 function registerCustomHandlers() {
 
     $("a.item").click(function() {
         $(this).addClass("selected").siblings().removeClass("selected");
+        return false;
     });
 
 
@@ -59,12 +43,6 @@ function registerCustomHandlers() {
         return false;
     });
 }
-
-function loadTop() {
-    $('#partial-view').load('../partials/m/top.html');
-    $('#top').addClass('active');
-}
-;
 
 function createPath() {
     var userUrl = $('#user-url').val();

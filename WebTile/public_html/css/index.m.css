@@ -97,4 +97,6 @@ a.item:hover{
     width: 100%;
 }
 
+.fb-comments, .fb-comments iframe[style] {width: 100% !important;}
+
 
