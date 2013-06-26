@@ -58,7 +58,7 @@ function createPath() {
 
 function checkUrl(userUrl){
     if(userUrl.length === 0){
-        return "http://www.hawks.mysteria.cz";
+        return "http://www.webtile.org";
     }
     var index = userUrl.indexOf("http");
     if(index !== 0){

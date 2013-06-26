@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Web Live Tile</title>
+        <title>Custom Live Tile</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="webtile">
+        <meta name="description" content="Windows Phone web custom tile. Nice web tile for your favorite websites.">
+        <meta name="keywords" content="web, live tile, tile, pin to start, start, windows, phone, windows phone, windows phone 8, windows phone 7.5, Google search pin to start, pin web to start, lumia, lumia pin web to start, custom live tile, wp live tile, lumia 800 pin, htc pin to start, samsung pin to start, nice web live tile, wp8, wp7, wp7.5">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/general.css">
         <link rel="stylesheet" type="text/css" href="css/content.css">
+        <link href="/img/favicon.png" rel="shortcut icon" />
         <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/flick/jquery-ui.min.css">
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
         <script type="text/javascript" src="js/util.js" ></script>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-42029356-1', 'webtile.org');
+            ga('send', 'pageview');
+
+        </script>
     </head>
     <body>
         <div id="fb-root"></div>
         <script></script> 
         <div id="header">
-            <div id="logo"></div>
-            <a href="http://www.hawks.mysteria.cz" id="web-link">www.webtile.org</a>
+            <a href="http://www.webtile.org" ><div id="logo"></div></a>
+            <a href="http://www.webtile.org" id="web-link">www.webtile.org</a>
         </div>
         <div id="body">
 
             <div id="header-wrapper">
                 <div id="qr-code"></div>
                 <div id="description">
+                    <h1>Web Live Tile</h1>
                     <p>Welcome to the Web Live Tile project website. Thanks to this project you can pin your favourite websites to your windows phone home screen. If you are unable to find your website icon in the Top section, you can make your own link in Custom section.</p>
                     <p>Supported operating systems are Windows Phone 7 and Windows Phone 8. To make custom web live tile you need to enter the URL, choose the category and pin the generated website to your screen. The service is completely free and without any ads. Nice live tiles that links to your favorite website. Enjoy!</p>
                 </div>
@@ -38,7 +60,7 @@
                     <span>info.webtile[at]gmail.com</span><br /><br />
                     <div class="g-plusone"></div>
                     <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
-                    <div class="fb-like" data-href="http://www.hawks.mysteria.cz" data-send="true" data-layout="button_count" data-width="201" data-show-faces="true"></div></div>
+                    <div class="fb-like" data-href="http://www.webtile.org" data-send="true" data-layout="button_count" data-width="201" data-show-faces="true"></div></div>
                 <br /><br />
                 <div id="right-content">
                     <div id="menu-wrapper">
@@ -106,14 +128,14 @@
                     <br />
                     <div class="fb-comments-wrapper">
                         <span>Feel free to send comments.</span>
-                        <div class="fb-comments" data-href="http://hawks.mysteria.cz" data-mobile="false" data-width="538" data-num-posts="15"></div>
+                        <div class="fb-comments" data-href="http://www.webtile.org" data-mobile="false" data-width="538" data-num-posts="15"></div>
                     </div>
                 </div>
             </div>  
             <div id="bottom">
                 <div id="footer">
                     <p>WEB LIVE TILE</p>
-                    <span>webtile[at]gmail.com</span>
+                    <span>info.webtile[at]gmail.com</span>
                     <span>©2013 DUSATKO Z</span>
                 </div>
             </div>

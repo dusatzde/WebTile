@@ -11,7 +11,7 @@ function getParam(paramName) {
 }
 
 function redirect() {
-    if (document.referrer.indexOf('hawks.mysteria.cz/') < 1) {
+    if (document.referrer.indexOf('webtile.org/') < 1) {
         var url = getParam('url');
         window.location.replace(url);
         return true;

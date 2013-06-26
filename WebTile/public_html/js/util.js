@@ -3,19 +3,7 @@
 })(navigator.userAgent || navigator.vendor || window.opera);
 
 if (jQuery.browser.mobile === true) {
-    window.location.replace(replaceWithMobilePath());
-}
-
-
-
-function replaceWithMobilePath(){
-    var url = window.location;
-    var url_str = url.toString();
-    var path = window.location.pathname;
-    var index = url_str.indexOf(path);
-    var server = url_str.substring(0, index);
-    var new_path = server + '/m' + path;
-    return new_path;
+    window.location.replace('http://www.webtile.org/m');
 }
 
 $(document).ready(function() {
@@ -78,7 +66,7 @@ function createPath() {
 
 function checkUrl(userUrl){
     if(userUrl.length === 0){
-        return "http://www.hawks.mysteria.cz";
+        return "http://www.webtile.org";
     }
     var index = userUrl.indexOf("http");
     if(index !== 0){
